@@ -3,6 +3,7 @@ body {
   font-weight: 300;
   font-style: normal;
   background-color: #f4d8f3;
+  color: white;
 }
 
 .weather-app-body {
@@ -14,6 +15,9 @@ body {
   padding: 30px;
 }
 
+a {
+  color: #f4d8f3;
+}
 .Search-Form {
   text-align: right;
 }
@@ -32,4 +36,11 @@ body {
   border-radius: 6px;
   padding: 15px 10px;
   background-color: #72689a;
+}
+
+footer {
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: #f4d8f3(0, 0, 0, 0.6);
 }
