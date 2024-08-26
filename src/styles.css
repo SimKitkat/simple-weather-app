@@ -23,19 +23,27 @@ a {
 }
 .Search-input {
   align-items: stretch;
-  width: 50%;
+  width: 45%;
   background-color: #f4d8f3;
 
   border: none;
   border-radius: 6px;
-  padding: 15px 10px;
+  padding: 14px 8px;
 }
 .Search-Button {
   width: 10%;
   border: none;
   border-radius: 6px;
-  padding: 15px 10px;
+  padding: 14px 8px;
   background-color: #72689a;
+}
+
+h1 {
+  font-weight: 50px;
+  font-size: 60px;
+  line-height: 10px;
+  letter-spacing: -0.05em;
+  text-align: left;
 }
 
 .city-current {
@@ -61,10 +69,10 @@ a {
   margin-top: 16px;
   font-size: 28px;
 }
-
-.conditions {
-  font-size: 16px;
-  line-height: 20px;
+.weather {
+  font-size: 20px;
+  line-height: 5px;
+  text-align: center;
 }
 ul {
   list-style: none;
