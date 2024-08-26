@@ -3,25 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
     <title>Simple-Weather-App</title>
   </head>
   <body>
+    <div class="weather-app-body">
     <header>
-        <form>
+        <form class="Search-Form">
             <input type="search" placeholder="Enter a city name" required  id="Search-input">
             <input type="submit" value="Search" id="Search-Button">
         </form>
     </header>
     <main>
-       <H1>Cape Town  </H1>  
-<p>Monday | August 26 | 2024
+       <H1 class="city-name">Cape Town  </H1>  
+<p class="city-current-date">Monday | August 26 | 2024
 11:44
-34°</p>
-<h2>
+</p>
+<h2 class="city-current-temp">
     scattered clouds
     34°
 </h2>
-<ul>
+<ul class="city-current-conditions">
     <li> Precipitation: 7%</li>
     <li>Humidity: 24%</li>
     <li>Wind: 2 mph</li>
@@ -39,4 +41,6 @@
       <a href="https://simply-the-weather-app.netlify.app/" target="_blank"
         >on Netlify</a
       >
+     </footer>
+     </div>
 </html>
