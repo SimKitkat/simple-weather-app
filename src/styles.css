@@ -42,12 +42,26 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.temperature {
-  font-size: 50px;
+.weather-app-temperature-container {
+  display: flex;
 }
-.temperature-icon {
-  font-size: 30px;
+
+.weather-app-icon {
+  font-size: 44px;
+  margin-top: 22px;
 }
+
+.weather-app-temperature {
+  font-size: 88px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.weatehr-app-unit {
+  margin-top: 16px;
+  font-size: 28px;
+}
+
 .conditions {
   font-size: 16px;
   line-height: 20px;
