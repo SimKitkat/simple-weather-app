@@ -24,3 +24,5 @@ function cityName(event) {
 
 let searchFormElement = document.querySelector("#search-Form");
 searchFormElement.addEventListener("submit", cityName);
+
+searchCity("windhoek");
