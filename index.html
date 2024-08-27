@@ -35,9 +35,13 @@
       </header>
       <main>
         <h1 class="city-name" id="city-name-search"></h1>
-        <p class="city-current-date">Monday | August 26 | 2024</p>
+        <p class="city-current-date">
+          <span id="current-day"></span> |
+          <span id="current-month-date"></span> |
+          <span id="current-year"></span>
+        </p>
         <div class="city-current">
-          <div class="city-current-time">11:44</div>
+          <div class="city-current-time" id="city-current-time"></div>
           <br />
 
           <div class="weather-app-temperature-container">
@@ -50,12 +54,12 @@
           </div>
 
           <ul class="city-current-conditions">
-            <li>Precipitation: 7%</li>
-            <li>Humidity: 24%</li>
-            <li>Wind: 2 mph</li>
+            <li>Feels like: <span id="feel"></span>°C</li>
+            <li>Humdity: <span id="humidity"></span>%</li>
+            <li>Wind Speed: <span id="wind"></span>km/h</li>
           </ul>
         </div>
-        <div class="weather">scattered clouds</div>
+        <div class="weather" id="description">scattered clouds</div>
       </main>
 
       <footer>
