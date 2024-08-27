@@ -18,7 +18,7 @@ function refreshTemperature(Response) {
   humidityElement.innerHTML = Response.data.temperature.humidity;
   feelElement.innerHTML = Response.data.temperature.feels_like;
   windElement.innerHTML = Response.data.wind.speed;
-  timeElement.innerHTML = `${date.getHours()}:${date.getMinutes()}`;
+  timeElement.innerHTML = formatTime(date);
   dayElement.innerHTML = formatDay(date);
   monthElement.innerHTML = formatMonthDate(date);
   yearElement.innerHTML = formatYear(date);
@@ -64,6 +64,17 @@ function formatMonthDate(date) {
 function formatYear(date) {
   let year = date.getFullYear();
   return `${year}`;
+}
+
+function formatTime(date) {
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
+
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  return `${hours}:${minutes}`;
 }
 
 function searchCity(city) {
