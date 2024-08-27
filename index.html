@@ -3,57 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/styles.css" />
 
     <title>Simple-Weather-App</title>
   </head>
   <body>
     <div class="weather-app-body">
-    <header>
+      <header>
         <form class="Search-Form" id="search-Form">
-            <input type="search" placeholder="Enter a city name" required  class="Search-input" id="search-input-element">
-            <input type="submit" value="Search" class="Search-Button" id="Search-Button">
+          <input
+            type="search"
+            placeholder="Enter a city name"
+            required
+            class="Search-input"
+            id="search-input-element"
+          />
+          <input
+            type="submit"
+            value="Search"
+            class="search-Button"
+            id="search-Button"
+          />
         </form>
-    </header>
-    <main>
-       <h1 class="city-name" id="city-name-search">Cape Town  </h1>  
-<p class="city-current-date">Monday | August 26 | 2024 </p>
-<div class="city-current">
-<div class="city-current-time">11:44</div>
-<br/>
+      </header>
+      <main>
+        <h1 class="city-name" id="city-name-search">Cape Town</h1>
+        <p class="city-current-date">Monday | August 26 | 2024</p>
+        <div class="city-current">
+          <div class="city-current-time">11:44</div>
+          <br />
 
- <div class="weather-app-temperature-container">
-    
+          <div class="weather-app-temperature-container">
             <div class="weather-app-icon">🌤️</div>
             <div class="weather-app-temperature">12</div>
             <div class="weatehr-app-unit">°C</div>
           </div>
-         
-<ul class="city-current-conditions">
-    <li> Precipitation: 7%</li>
-    <li>Humidity: 24%</li>
-    <li>Wind: 2 mph</li>
 
-</ul>
+          <ul class="city-current-conditions">
+            <li>Precipitation: 7%</li>
+            <li>Humidity: 24%</li>
+            <li>Wind: 2 mph</li>
+          </ul>
+        </div>
+        <div class="weather">scattered clouds</div>
+      </main>
 
-</div>
- <div class="weather">scattered clouds</div>
-
-    </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/SimKitkat" target="_blank"> Simone</a>, code
+        open-sourced on
+        <a
+          href="https://github.com/SimKitkat/simple-weather-app"
+          target="_blank"
+          >GitHub</a
+        >
+        and website hosted
+        <a href="https://simply-the-weather-app.netlify.app/" target="_blank"
+          >on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
   </body>
-  <footer>
-      Coded by
-      <a href="https://github.com/SimKitkat" target="_blank"> Simone</a>,
-      code open-sourced on
-      <a href="https://github.com/SimKitkat/simple-weather-app" target="_blank">GitHub</a>
-      and website hosted
-      <a href="https://simply-the-weather-app.netlify.app/" target="_blank"
-        >on Netlify</a
-      >
-     </footer>
-     </div>
-     <script src="src/index.js"></script>
 </html>
