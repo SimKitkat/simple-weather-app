@@ -13,13 +13,13 @@
   <body>
     <div class="weather-app-body">
     <header>
-        <form class="Search-Form">
-            <input type="search" placeholder="Enter a city name" required  class="Search-input">
-            <input type="submit" value="Search" class="Search-Button">
+        <form class="Search-Form" id="search-Form">
+            <input type="search" placeholder="Enter a city name" required  class="Search-input" id="search-input-element">
+            <input type="submit" value="Search" class="Search-Button" id="Search-Button">
         </form>
     </header>
     <main>
-       <H1 class="city-name">Cape Town  </H1>  
+       <h1 class="city-name" id="city-name-search">Cape Town  </h1>  
 <p class="city-current-date">Monday | August 26 | 2024 </p>
 <div class="city-current">
 <div class="city-current-time">11:44</div>
@@ -55,4 +55,5 @@
       >
      </footer>
      </div>
+     <script src="src/index.js"></script>
 </html>
