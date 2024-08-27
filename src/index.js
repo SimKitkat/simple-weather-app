@@ -11,6 +11,7 @@ function refreshTemperature(Response) {
   let dayElement = document.querySelector("#current-day");
   let monthElement = document.querySelector("#current-month-date");
   let yearElement = document.querySelector("#current-year");
+  let iconElement = document.querySelector("#weather-app-icon");
 
   cityElement.innerHTML = Response.data.city;
   tempElement.innerHTML = Math.round(temperature);
@@ -22,6 +23,8 @@ function refreshTemperature(Response) {
   dayElement.innerHTML = formatDay(date);
   monthElement.innerHTML = formatMonthDate(date);
   yearElement.innerHTML = formatYear(date);
+  iconElement.innerHTML = `<img src="${Response.data.condition.icon_url}" class="weather-app-icon" />`;
+
   console.log(Response.data);
 }
 
