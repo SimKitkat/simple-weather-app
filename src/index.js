@@ -24,8 +24,6 @@ function refreshTemperature(Response) {
   monthElement.innerHTML = formatMonthDate(date);
   yearElement.innerHTML = formatYear(date);
   iconElement.innerHTML = `<img src="${Response.data.condition.icon_url}" class="weather-app-icon" />`;
-
-  console.log(Response.data);
 }
 
 function formatDay(date) {
