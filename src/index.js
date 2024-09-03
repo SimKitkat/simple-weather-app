@@ -24,6 +24,8 @@ function refreshTemperature(Response) {
   monthElement.innerHTML = formatMonthDate(date);
   yearElement.innerHTML = formatYear(date);
   iconElement.innerHTML = `<img src="${Response.data.condition.icon_url}" class="weather-app-icon" />`;
+
+  getForecastWeather(Response.data.city);
 }
 
 function formatDay(date) {
@@ -95,8 +97,14 @@ function cityName(event) {
 let searchFormElement = document.querySelector("#search-Form");
 searchFormElement.addEventListener("submit", cityName);
 
-function displayForecast() {
-  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+function getForecastWeather(city) {
+  let apiKey = "8b0a6ad4348ba4af0cb7ofe7df4t6b19";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
+  axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(Response) {
+  let days = ["Tue", "Wed", "Thur", "Fri", "Sat"];
   let forecastHtml = "";
 
   days.forEach(function (day) {
@@ -120,4 +128,3 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHtml;
 }
 searchCity("windhoek");
-displayForecast();
